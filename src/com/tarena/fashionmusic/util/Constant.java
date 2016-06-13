@@ -24,6 +24,7 @@ public class Constant {
 	public static final String ACTION_SET_PLAYMODE = "com.tarena.action.PALY_MODE";
 	public static final String ACTION_STAR_THREAD = "com.tarena.action.STAR_THREA";
 	public static final String ACTION_LRC = "com.tarena.action.lrc";
+<<<<<<< HEAD
 	
 	
 	
@@ -66,5 +67,7 @@ public class Constant {
 
     public static final String DIR_MUSIC = "/drm_music";
     public static final String DIR_LRC = "/drm_music/lrc/";
+=======
+>>>>>>> f767f3b04496eed7720946af6d1ac8164198fa07
 
 }

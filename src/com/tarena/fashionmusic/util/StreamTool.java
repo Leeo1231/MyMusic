@@ -3,12 +3,18 @@ package com.tarena.fashionmusic.util;
 import java.io.BufferedInputStream;
 import java.io.BufferedOutputStream;
 import java.io.ByteArrayOutputStream;
+<<<<<<< HEAD
 import java.io.File;
+=======
+>>>>>>> f767f3b04496eed7720946af6d1ac8164198fa07
 import java.io.FileOutputStream;
 import java.io.IOException;
 import java.io.InputStream;
 import java.io.OutputStream;
+<<<<<<< HEAD
 import java.io.PrintStream;
+=======
+>>>>>>> f767f3b04496eed7720946af6d1ac8164198fa07
 
 import android.os.Handler;
 import android.os.Message;
@@ -17,12 +23,16 @@ public class StreamTool {
 	public static final int MSG_PROGRESS = 5;
 	public static void save(InputStream in,String path,Handler handler,long fileLength) throws IOException{
 		if(in !=null && path!=null){
+<<<<<<< HEAD
 			//FileOutputStream out = new FileOutputStream(path);
 			
 			
 			File file=new File(path);  
 			file.createNewFile();
 			OutputStream out = new FileOutputStream(file);
+=======
+			FileOutputStream out = new FileOutputStream(path);
+>>>>>>> f767f3b04496eed7720946af6d1ac8164198fa07
 			readData(in, out,handler,fileLength);
 		}
 	}

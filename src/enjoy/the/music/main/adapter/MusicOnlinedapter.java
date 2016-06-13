@@ -21,7 +21,10 @@ import com.tarena.fashionmusic.util.ImageLoader.ImageCallback;
 import enjoy.the.music.R;
 import enjoy.the.music.db.MusicDao;
 import enjoy.the.music.entry.Music;
+<<<<<<< HEAD
 import enjoy.the.music.entry.SearchResult;
+=======
+>>>>>>> f767f3b04496eed7720946af6d1ac8164198fa07
 
 
 public class MusicOnlinedapter extends BaseAdapter {
@@ -40,6 +43,7 @@ public class MusicOnlinedapter extends BaseAdapter {
 		this.musicDao = new MusicDao(context);
 	}
 
+<<<<<<< HEAD
 	 public void setSearchResults(ArrayList<Music> searchResults) {	        
 	        this.sounds = searchResults;
 	    }
@@ -48,6 +52,8 @@ public class MusicOnlinedapter extends BaseAdapter {
 	        return sounds;
 	    }
 	
+=======
+>>>>>>> f767f3b04496eed7720946af6d1ac8164198fa07
 	public void addMusic(Music music) {
 		if (sounds != null) {
 			sounds.add(music);

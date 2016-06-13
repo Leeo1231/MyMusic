@@ -20,9 +20,15 @@ public class Setting {
 	/**
 	 * 皮肤资源的ID数组
 	 * */
+<<<<<<< HEAD
 	public static final int[] SKIN_RESOURCES = { 
 			R.drawable.main_bg06, R.drawable.main_bg03, R.drawable.main_bg04,
 			R.drawable.main_bg05, R.drawable.main_bg02 ,R.drawable.main_bg07,
+=======
+	public static final int[] SKIN_RESOURCES = { R.drawable.main_bg01,
+			R.drawable.main_bg02, R.drawable.main_bg03, R.drawable.main_bg04,
+			R.drawable.main_bg05, R.drawable.main_bg06 ,R.drawable.main_bg07,
+>>>>>>> f767f3b04496eed7720946af6d1ac8164198fa07
 			R.drawable.main_bg08, R.drawable.main_bg09 ,R.drawable.main_bg10};
 
 	public Setting(Context context,boolean isWrite) {

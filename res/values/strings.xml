@@ -1,7 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
 
+<<<<<<< HEAD
     <string name="app_name">LEEOMUSIC</string>
+=======
+    <string name="app_name">魔乐盒</string>
+>>>>>>> f767f3b04496eed7720946af6d1ac8164198fa07
     <string name="streamloadingtext" msgid="3367150884806639224">         "正在连接"</string>
 
     <string name="set_time">请输入睡眠时间的整分钟数(分)</string>

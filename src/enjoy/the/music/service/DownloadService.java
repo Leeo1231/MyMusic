@@ -3,11 +3,14 @@ package enjoy.the.music.service;
 import java.io.IOException;
 import java.io.InputStream;
 import java.util.ArrayList;
+<<<<<<< HEAD
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
 
 import org.jsoup.Jsoup;
 import org.jsoup.nodes.Document;
+=======
+>>>>>>> f767f3b04496eed7720946af6d1ac8164198fa07
 
 import android.app.DownloadManager;
 import android.app.Notification;
@@ -24,16 +27,24 @@ import android.widget.RemoteViews;
 import android.widget.Toast;
 
 
+<<<<<<< HEAD
 import com.tarena.fashionmusic.util.Constant;
 import com.tarena.fashionmusic.util.HttpTool;
 import com.tarena.fashionmusic.util.StreamTool;
 import com.tarena.fashionmusic.util.DownloadUtils;
+=======
+import com.tarena.fashionmusic.util.HttpTool;
+import com.tarena.fashionmusic.util.StreamTool;
+>>>>>>> f767f3b04496eed7720946af6d1ac8164198fa07
 
 import enjoy.the.music.MainActivity;
 import enjoy.the.music.R;
 import enjoy.the.music.db.MusicDao;
 import enjoy.the.music.entry.Music;
+<<<<<<< HEAD
 import enjoy.the.music.entry.SearchResult;
+=======
+>>>>>>> f767f3b04496eed7720946af6d1ac8164198fa07
 
 public class DownloadService extends Service {
 	private static final int MSG_OK = 1;// 下载完成
@@ -50,8 +61,11 @@ public class DownloadService extends Service {
 	private long fileLength;
 	// 当前下载的音乐文件名
 	private String currentMusicName;
+<<<<<<< HEAD
 	
 	private ExecutorService mThreadPool;
+=======
+>>>>>>> f767f3b04496eed7720946af6d1ac8164198fa07
 
 	// binder对象，用于在Activity中向Service通信
 	public class MyBinder extends Binder {
@@ -75,6 +89,7 @@ public class DownloadService extends Service {
 		return new MyBinder();
 	}
 
+<<<<<<< HEAD
 	//获取下载音乐的URL
     private String getDownloadMusicURL(Music music) {           
                 //http://music.migu.cn/#/album/1003215276
@@ -119,11 +134,16 @@ public class DownloadService extends Service {
     
 	
 	
+=======
+>>>>>>> f767f3b04496eed7720946af6d1ac8164198fa07
 	@Override
 	public void onCreate() {
 		super.onCreate();
 		// 初始化任务队列
+<<<<<<< HEAD
 		mThreadPool = Executors.newSingleThreadExecutor();
+=======
+>>>>>>> f767f3b04496eed7720946af6d1ac8164198fa07
 		taskQueue = new ArrayList<Music>();
 		// 创建任务轮询线程
 		thread = new Thread() {
@@ -137,9 +157,13 @@ public class DownloadService extends Service {
 							// 取出任务队列中的第一条任务
 							Music task = taskQueue.remove(0);
 							// //获取当前下载的任务的文件长度
+<<<<<<< HEAD
 							//String uri = HttpTool.URI + task.getMusicPath();
 							String uri = getDownloadMusicURL(task);
 							
+=======
+							String uri = HttpTool.URI + task.getMusicPath();
+>>>>>>> f767f3b04496eed7720946af6d1ac8164198fa07
 							fileLength = HttpTool.getLength(uri, null, null,HttpTool.GET) / 1024;
 							// 获取当前下载的任务的文件名
 							currentMusicName = task.getMusicName();
@@ -148,10 +172,15 @@ public class DownloadService extends Service {
 							// 下载文件
 							InputStream in = HttpTool.getStream(uri, null,
 									null, HttpTool.GET);
+<<<<<<< HEAD
 							
 							String pathName = task.getSavePath() + "/" + task.getMusicName() + ".mp3";
 							System.out.println("HELIZHI save music path = " + pathName);
 							StreamTool.save(in, pathName, handler,fileLength);
+=======
+							StreamTool.save(in, task.getSavePath(), handler,
+									fileLength);
+>>>>>>> f767f3b04496eed7720946af6d1ac8164198fa07
 							// 下载完成时发送消息回主线程
 							Message msg = handler.obtainMessage(MSG_OK, task);
 							handler.sendMessage(msg);

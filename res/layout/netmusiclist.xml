@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
+<<<<<<< HEAD
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:orientation="vertical"
     android:layout_width="match_parent"
@@ -49,3 +50,17 @@
         android:scrollbars="none"
         android:visibility="visible"/>
 </LinearLayout>
+=======
+<merge  xmlns:android="http://schemas.android.com/apk/res/android">
+  <include layout="@layout/loding"  android:id="@+id/lodinginfo"/>
+<ListView 
+    android:id="@+id/lvSounds"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:divider="@drawable/separator_all_black"
+    android:fastScrollEnabled="true"
+    android:cacheColorHint="#00000000"
+    android:dividerHeight="1dp"
+    />
+</merge>
+>>>>>>> f767f3b04496eed7720946af6d1ac8164198fa07
