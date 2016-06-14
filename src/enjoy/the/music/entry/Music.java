@@ -141,6 +141,10 @@ public class Music implements Serializable {
 		}
 		return result;
 	}
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> b7a2272ce6b3c11cf6bacafc1e2a8b56dec71c06
 	
 	
 	@Override
@@ -153,5 +157,10 @@ public class Music implements Serializable {
                 ", size=" + music_size +
                 '}';
     }
+<<<<<<< HEAD
+=======
+=======
+>>>>>>> f767f3b04496eed7720946af6d1ac8164198fa07
+>>>>>>> b7a2272ce6b3c11cf6bacafc1e2a8b56dec71c06
 
 }

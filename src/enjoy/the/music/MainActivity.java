@@ -329,8 +329,17 @@ public class MainActivity extends Activity implements OnClickListener {
 	NetLayout netLayout;
 	LocalLayout localLayout;
 	FavoriteLayout favoriteLayout;
+<<<<<<< HEAD
 	
 	private ImageButton search_btn;
+=======
+<<<<<<< HEAD
+	
+	private ImageButton search_btn;
+=======
+
+>>>>>>> f767f3b04496eed7720946af6d1ac8164198fa07
+>>>>>>> b7a2272ce6b3c11cf6bacafc1e2a8b56dec71c06
 	private void initView() {
 		/* 中间部分view page视图容器 */
 		viewPager = (ViewPager) findViewById(R.id.center_body_view_pager);
@@ -349,7 +358,14 @@ public class MainActivity extends Activity implements OnClickListener {
      	btlocal = (ImageButton) findViewById(R.id.imagemusic);
 		btfav = (ImageButton) findViewById(R.id.imagelove);
 		btnet = (ImageButton) findViewById(R.id.imagenet);
+<<<<<<< HEAD
 		search_btn = (ImageButton) findViewById(R.id.searchbutton);
+=======
+<<<<<<< HEAD
+		search_btn = (ImageButton) findViewById(R.id.searchbutton);
+=======
+>>>>>>> f767f3b04496eed7720946af6d1ac8164198fa07
+>>>>>>> b7a2272ce6b3c11cf6bacafc1e2a8b56dec71c06
 		/* 底部现实专辑图片 */
 		list_show_album = (ImageView) findViewById(R.id.list_show_album);
 		/* 下面三个是控制按钮 */
@@ -415,7 +431,14 @@ public class MainActivity extends Activity implements OnClickListener {
 				btfav.setSelected(false);
 				btnet.setSelected(true);
 				viewPager.setCurrentItem(2);
+<<<<<<< HEAD
 				
+=======
+<<<<<<< HEAD
+				
+=======
+>>>>>>> f767f3b04496eed7720946af6d1ac8164198fa07
+>>>>>>> b7a2272ce6b3c11cf6bacafc1e2a8b56dec71c06
 			}
 		 
 		 }
@@ -510,8 +533,18 @@ public class MainActivity extends Activity implements OnClickListener {
 	private void DownMusic(Music music) {
 		// 创建新的下载任务
 		music.setSavePath(dir.getAbsolutePath()
+<<<<<<< HEAD
 				/*+ music.getMusicPath().substring(
 						music.getMusicPath().lastIndexOf("/"))*/);
+=======
+<<<<<<< HEAD
+				/*+ music.getMusicPath().substring(
+						music.getMusicPath().lastIndexOf("/"))*/);
+=======
+				+ music.getMusicPath().substring(
+						music.getMusicPath().lastIndexOf("/")));
+>>>>>>> f767f3b04496eed7720946af6d1ac8164198fa07
+>>>>>>> b7a2272ce6b3c11cf6bacafc1e2a8b56dec71c06
 		// 通过binder对象，向service的任务队列添加新任务
 		binder.addTask(music);
 	}
@@ -753,8 +786,17 @@ public class MainActivity extends Activity implements OnClickListener {
 		intentfilter.addDataScheme("file");
 		ScanSDReicver receiver = new ScanSDReicver();
 		registerReceiver(receiver, intentfilter);
+<<<<<<< HEAD
 		sendBroadcast(new Intent(/*Intent.ACTION_MEDIA_MOUNTED,*/
 				Intent.ACTION_MEDIA_SCANNER_SCAN_FILE,
+=======
+<<<<<<< HEAD
+		sendBroadcast(new Intent(/*Intent.ACTION_MEDIA_MOUNTED,*/
+				Intent.ACTION_MEDIA_SCANNER_SCAN_FILE,
+=======
+		sendBroadcast(new Intent(Intent.ACTION_MEDIA_MOUNTED,
+>>>>>>> f767f3b04496eed7720946af6d1ac8164198fa07
+>>>>>>> b7a2272ce6b3c11cf6bacafc1e2a8b56dec71c06
 		Uri.parse("file://"+ Environment.getExternalStorageDirectory().getAbsolutePath())));
 		
 	}

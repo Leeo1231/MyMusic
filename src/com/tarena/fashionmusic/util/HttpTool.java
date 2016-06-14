@@ -111,7 +111,15 @@ public class HttpTool {
 		return entity;
 	}
 
+<<<<<<< HEAD
 	public static HttpResponse getresponse(String path,
+=======
+<<<<<<< HEAD
+	public static HttpResponse getresponse(String path,
+=======
+	public static String getresponse(String path,
+>>>>>>> f767f3b04496eed7720946af6d1ac8164198fa07
+>>>>>>> b7a2272ce6b3c11cf6bacafc1e2a8b56dec71c06
 			ArrayList<BasicNameValuePair> headers,
 			ArrayList<BasicNameValuePair> params, int method) {
 
@@ -164,7 +172,15 @@ public class HttpTool {
 		} catch (IOException e) {
 			e.printStackTrace();
 		}
+<<<<<<< HEAD
 		return response;
+=======
+<<<<<<< HEAD
+		return response;
+=======
+		return response.toString();
+>>>>>>> f767f3b04496eed7720946af6d1ac8164198fa07
+>>>>>>> b7a2272ce6b3c11cf6bacafc1e2a8b56dec71c06
 
 	}
 

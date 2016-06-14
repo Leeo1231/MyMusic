@@ -6,6 +6,10 @@ import java.util.ArrayList;
 
 import android.content.Context;
 import android.content.Intent;
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> b7a2272ce6b3c11cf6bacafc1e2a8b56dec71c06
 import android.os.AsyncTask;
 import android.os.Handler;
 import android.os.Message;
@@ -33,6 +37,20 @@ import com.tarena.fashionmusic.util.SearchMusicUtils;
 import com.tarena.fashionmusic.MusicLayIntenface;
 import com.tarena.fashionmusic.MyApplication;
 import com.tarena.fashionmusic.util.AppUtils;
+<<<<<<< HEAD
+=======
+=======
+import android.os.Handler;
+import android.os.Message;
+import android.view.LayoutInflater;
+import android.view.View;
+import android.widget.LinearLayout;
+import android.widget.ListView;
+import android.widget.Toast;
+
+import com.tarena.fashionmusic.MusicLayIntenface;
+>>>>>>> f767f3b04496eed7720946af6d1ac8164198fa07
+>>>>>>> b7a2272ce6b3c11cf6bacafc1e2a8b56dec71c06
 import com.tarena.fashionmusic.util.Constant;
 import com.tarena.fashionmusic.util.HttpTool;
 
@@ -40,9 +58,20 @@ import enjoy.the.music.entry.Music;
 import enjoy.the.music.entry.NetMusic;
 import enjoy.the.music.lrc.xml.MusicXmlParser;
 import enjoy.the.music.main.adapter.MusicOnlinedapter;
+<<<<<<< HEAD
 import enjoy.the.music.main.adapter.NetMusicListAdapter;
 
 public class NetLayout extends LinearLayout implements MusicLayIntenface{
+=======
+<<<<<<< HEAD
+import enjoy.the.music.main.adapter.NetMusicListAdapter;
+
+public class NetLayout extends LinearLayout implements MusicLayIntenface{
+=======
+
+public class NetLayout extends LinearLayout implements MusicLayIntenface {
+>>>>>>> f767f3b04496eed7720946af6d1ac8164198fa07
+>>>>>>> b7a2272ce6b3c11cf6bacafc1e2a8b56dec71c06
 
 	
 	public static final int DOWN_MUSIC=0;
@@ -53,6 +82,10 @@ public class NetLayout extends LinearLayout implements MusicLayIntenface{
 	ListView netlistview;
 	LayoutInflater inflater;
 	Context context;
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> b7a2272ce6b3c11cf6bacafc1e2a8b56dec71c06
 	//ArrayList<Music> netMusics;
 	//begin add by helizhi at 2016.06.11
 	MusicOnlinedapter adapter;
@@ -60,6 +93,13 @@ public class NetLayout extends LinearLayout implements MusicLayIntenface{
 	private EditText search_content;
 	private ImageButton search_btn;
 	//end add by helizhi at 2016.06.11
+<<<<<<< HEAD
+=======
+=======
+	ArrayList<Music> netMusics;
+	MusicOnlinedapter adapter;
+>>>>>>> f767f3b04496eed7720946af6d1ac8164198fa07
+>>>>>>> b7a2272ce6b3c11cf6bacafc1e2a8b56dec71c06
 	Intent intent;
     NetMusic nownMusic;
 	public NetLayout(Context context) {
@@ -73,6 +113,10 @@ public class NetLayout extends LinearLayout implements MusicLayIntenface{
 		
 		
 		initView();
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> b7a2272ce6b3c11cf6bacafc1e2a8b56dec71c06
 		loadNetData();
 		//initData();
 		initListener();
@@ -80,6 +124,15 @@ public class NetLayout extends LinearLayout implements MusicLayIntenface{
 
 	//add by helizhi at 2016.06.11
 	/*
+<<<<<<< HEAD
+=======
+=======
+		initData();
+		initListener();
+	}
+
+>>>>>>> f767f3b04496eed7720946af6d1ac8164198fa07
+>>>>>>> b7a2272ce6b3c11cf6bacafc1e2a8b56dec71c06
 	Handler handler = new Handler() {
 		@Override
 		public void handleMessage(Message msg) {
@@ -102,6 +155,10 @@ public class NetLayout extends LinearLayout implements MusicLayIntenface{
 			}
 		}
 	};
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> b7a2272ce6b3c11cf6bacafc1e2a8b56dec71c06
 	*/
 	//end by helizhi at 2016.06.11
 	
@@ -132,10 +189,20 @@ public class NetLayout extends LinearLayout implements MusicLayIntenface{
 	
 	
 	private ArrayList<Music> netMusics = new ArrayList<Music>();
+<<<<<<< HEAD
+=======
+=======
+
+>>>>>>> f767f3b04496eed7720946af6d1ac8164198fa07
+>>>>>>> b7a2272ce6b3c11cf6bacafc1e2a8b56dec71c06
 	@Override
 	public void initView() {
 		intent = new Intent(Constant.ACTION_NET_PLAY);
 		netlistview = (ListView) findViewById(R.id.lvSounds);
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> b7a2272ce6b3c11cf6bacafc1e2a8b56dec71c06
 		//lodingview=rootview.findViewById(R.id.lodinginfo);
 		
 		//add by helizhi at 2016.06.11
@@ -259,6 +326,17 @@ public class NetLayout extends LinearLayout implements MusicLayIntenface{
 	
 	
 	/*
+<<<<<<< HEAD
+=======
+=======
+		lodingview=rootview.findViewById(R.id.lodinginfo);
+		netMusics = new ArrayList<Music>();
+		adapter = new MusicOnlinedapter(context, netMusics, netlistview);
+		netlistview.setAdapter(adapter);
+	}
+
+>>>>>>> f767f3b04496eed7720946af6d1ac8164198fa07
+>>>>>>> b7a2272ce6b3c11cf6bacafc1e2a8b56dec71c06
 	@Override
 	public void initData() {
 		new Thread() {
@@ -278,9 +356,19 @@ public class NetLayout extends LinearLayout implements MusicLayIntenface{
 		}.start();
 	
 	}
+<<<<<<< HEAD
     */
 	//end add by helizhi at 2016.06.11
 	
+=======
+<<<<<<< HEAD
+    */
+	//end add by helizhi at 2016.06.11
+	
+=======
+
+>>>>>>> f767f3b04496eed7720946af6d1ac8164198fa07
+>>>>>>> b7a2272ce6b3c11cf6bacafc1e2a8b56dec71c06
 	@Override
 	public void initListener() {
 	
@@ -300,6 +388,10 @@ public class NetLayout extends LinearLayout implements MusicLayIntenface{
 		
 	}
 
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> b7a2272ce6b3c11cf6bacafc1e2a8b56dec71c06
 
 	@Override
 	public void initData() {
@@ -307,4 +399,9 @@ public class NetLayout extends LinearLayout implements MusicLayIntenface{
 		
 	}	
 
+<<<<<<< HEAD
+=======
+=======
+>>>>>>> f767f3b04496eed7720946af6d1ac8164198fa07
+>>>>>>> b7a2272ce6b3c11cf6bacafc1e2a8b56dec71c06
 }
